@@ -1,7 +1,7 @@
 
 # 📊 Excel-Analytics-Hub
 
-A full-stack MERN web app to upload Excel files and visualize data via interactive charts. Built with React (Vite), Tailwind CSS, Chart.js, and Express.js. Includes Google OAuth + JWT authentication, responsive UI, and real-time analytics tools.
+A full-stack MERN web app to upload Excel files and visualize data via interactive charts. Built with React (Vite), Tailwind CSS, Chart.js, and Express.js. Includes JWT authentication, responsive UI, and real-time analytics tools.
 
 ---
 
@@ -10,7 +10,7 @@ A full-stack MERN web app to upload Excel files and visualize data via interacti
 - 📊 Dynamic data visualization (Bar, Line, Pie, Doughnut, Area)
 - 🧠 Select header rows (1–10/custom)
 - 🎛️ X/Y axis selection, filters, search & pagination
-- 🔐 Google OAuth + JWT login
+- 🔐 JWT login
 - 🌙 Dark mode & Framer Motion animations
 - 📤 Export chart as PNG, filtered data as CSV
 - 🧠 AI Insights (coming soon)
@@ -30,7 +30,7 @@ A full-stack MERN web app to upload Excel files and visualize data via interacti
 ### 1. Clone Repo
 ```bash
 git clone https://github.com/subratraj6630/Excel-Analytics-Hub.git
-cd excel-analytics
+cd Excel-Analytics-Hub
 ````
 
 ### 2. Configure Environment Variables
@@ -39,8 +39,7 @@ cd excel-analytics
 
 ```env
 VITE_API_URL=http://127.0.0.1:5000
-VITE_GOOGLE_CLIENT_ID=your-google-client-id
-```
+
 
 **server/.env**
 
@@ -110,7 +109,7 @@ Open: [http://localhost:5173](http://localhost:5173)
 
 * `.env` files are used for all secrets and **ignored by Git**
 * Uses `useMemo`, debounced inputs, pagination for performance
-* Upcoming: AI analysis via Grok API
+* Upcoming: AI analysis via OpenAI API
 
 ---
 
